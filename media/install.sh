@@ -79,16 +79,6 @@ docker run -d \
 
 }
 
-start(){
-media
-nastools
-jellyfin
-jackett
-qbittorrent
-docker_uinstall
-docker_media
-}
-
 docker_rm(){
 
 docker stop jellyfin
@@ -117,7 +107,13 @@ case $pass in
         Y|y)
 
                 echo "正在安装。。。"
-                start
+                media
+		nastools
+		jellyfin
+		jackett
+		qbittorrent
+		docker_uinstall
+		docker_media
 				
 				
         ;;
